@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--=============== JS ===============-->
+    <script src="boards.js"></script>
+    <script src="script.js" defer></script>
+
+    <title>Sudoku</title>
+  </head>
+
+  <body>
+    <header>
+      <a class="back-btn" href="../../index.html">< Back...</a>
+
+      <!--=============== MODAL ===============-->
+
+      <div class="game-modal">
+        <div class="content">
+          <img src="images/lost.gif" alt="gif" />
+          <h4></h4>
+          <p></p>
+          <button class="play-again">Play Again</button>
+        </div>
+      </div>
+
+      <!--=============== OPTIONS ===============-->
+
+      <h1>Sudoku</h1>
+      <div id="setupGame">
+        <div id="diff">
+          <h2>Choose Difficulty:</h2>
+          <div class="choices-wrapper">
+            <label
+              ><input
+                type="radio"
+                name="diff"
+                value="easy"
+                id="diff-1"
+                checked
+              />
+              Easy</label
+            >
+            <label
+              ><input type="radio" name="diff" value="medium" id="diff-2" />
+              Medium</label
+            >
+            <label
+              ><input type="radio" name="diff" value="hard" id="diff-3" />
+              Hard</label
+            >
+          </div>
+        </div>
+        <div id="time">
+          <h2>Choose Time:</h2>
+
+          <div class="choices-wrapper">
+            <label
+              ><input
+                type="radio"
+                name="time"
+                value="three"
+                id="time-1"
+                checked
+              />
+              5 Mins</label
+            >
+            <label
+              ><input type="radio" name="time" value="five" id="time-2" /> 10
+              Mins</label
+            >
+            <label
+              ><input type="radio" name="time" value="ten" id="time-3" /> 15
+              Mins</label
+            >
+          </div>
+        </div>
+        <div id="theme">
+          <h2>Choose Theme:</h2>
+          <div class="choices-wrapper">
+            <label
+              ><input
+                type="radio"
+                name="theme"
+                value="light"
+                id="theme-1"
+                checked
+              />
+              Light</label
+            >
+            <label
+              ><input type="radio" name="theme" value="dark" id="theme-2" />
+              Dark</label
+            >
+          </div>
+        </div>
+      </div>
+      <button id="startBtn">Create New Game!</button>
+    </header>
+
+    <!--=============== GAME ===============-->
+
+    <main>
+      <div id="game">
+        <div class="stats-board-wrapper">
+          <div id="stats">
+            <p id="timer"></p>
+            <p id="lives"></p>
+          </div>
+
+          <div id="board"></div>
+        </div>
+        <div id="numberContainer" class="hidden">
+          <p id="one">1</p>
+          <p id="two">2</p>
+          <p id="three">3</p>
+          <p id="four">4</p>
+          <p id="five">5</p>
+          <p id="six">6</p>
+          <p id="seven">7</p>
+          <p id="eight">8</p>
+          <p id="nine">9</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Brad | Strike Programming</p>
+    </footer>
+  </body>
+</html>

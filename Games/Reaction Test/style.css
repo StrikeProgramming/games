@@ -1,0 +1,103 @@
+/*=============== BASE ===============*/
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  background: #efefef;
+  font-family: sans-serif;
+}
+
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+
+.back-btn:hover {
+  color: red;
+}
+
+/*=============== START GAME ===============*/
+
+.container,
+.results-wrapper {
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #f1f1f1;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  width: 600px;
+  margin-block: 2rem;
+  background: red;
+  color: #fff;
+  font-size: 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.start-btn {
+  padding: 0 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background: red;
+  color: #fff;
+  font-size: 2rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+.start-btn:hover {
+  background: darkred;
+}
+
+/*=============== GAME ===============*/
+
+.time-taken,
+.results-wrapper {
+  display: none;
+}
+
+.time-taken {
+  padding: 1rem;
+}
+
+.shape-wrapper {
+  display: none;
+}
+
+#shape {
+  position: relative;
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.total-score {
+  font-size: 3rem;
+  font-weight: 700;
+}

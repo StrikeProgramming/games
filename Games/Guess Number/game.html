@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--=============== JS ===============-->
+    <script defer src="script.js"></script>
+
+    <title>Guess the Number</title>
+  </head>
+
+  <body id="gamePage">
+    <a class="back-btn" href="../../index.html">< Back...</a>
+
+    <div class="container">
+      <!--=============== GAME START ===============-->
+
+      <h1 class="title">Guess the Number Game</h1>
+      <div class="start-container">
+        <p class="description">Click to start game:</p>
+        <button class="start-btn btn">Start Game</button>
+      </div>
+
+      <!--=============== DIFFICULTY ===============-->
+
+      <div class="difficulty-container">
+        <p class="description">Please choose your difficulty:</p>
+        <div class="btn-container">
+          <button id="easy" class="difficulty-btn easy-btn btn">Easy</button>
+          <button id="medium" class="difficulty-btn medium-btn btn">
+            Medium
+          </button>
+          <button id="hard" class="difficulty-btn hard-btn btn">Hard</button>
+        </div>
+      </div>
+
+      <!--=============== GAME ===============-->
+      <div class="game-container">
+        <p class="description" id="numBetween">
+          Guess a number between 1 and 100:
+        </p>
+        <input class="input" type="text" id="guessField" required />
+        <button class="btn guess-btn">Submit Guess</button>
+      </div>
+      <div class="message-container">
+        <p id="result">Good Luck!</p>
+        <p id="successMessage">
+          You guessed the correct number in
+          <span class="guess-count"></span> attempts!
+        </p>
+        <p id="almostMessage">
+          You have <span class="attempts"></span> attempts left!
+        </p>
+        <p id="failedMessage">
+          The correct number was <span class="failed"></span>!
+        </p>
+        <button class="restart-btn btn">Restart Game</button>
+      </div>
+    </div>
+  </body>
+</html>
